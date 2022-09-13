@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<title>SAMP Map</title>
+	<link rel="icon" type="image/x-icon" href="fav.ico">
+</head>
+<body id="_" style="overflow: hidden;  background-color: #6e89a8;">
+
+	<div id="gui">
+		<p>SAMP Map</p><br>
+	</div>
+
+	<div id="gui_bottom">
+		<button onclick="toggleDefaultMap()">Обычная карта</button>
+		<button onclick="toggleDarkMap()">Темная карта</button>
+	</div>
+
+	<div id="main" style="transform: scale(0); transform-origin: 0 0; top: 0; left: 0;">
+		<img id="main__map" src="./img/default_map.jpg" alt="Карта" style="width: 2000px; height: 2000px;">
+		<div id="main__players"></div>
+	</div>
+
+	<script src="./js/main.js"></script>
+</body>
+</html>
