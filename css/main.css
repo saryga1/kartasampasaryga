@@ -1,0 +1,74 @@
+@font-face{
+    font-family: "gta-font";
+    src: url("../fonts/gta_font.ttf");
+}
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button {
+    font-family: "gta-font", serif;
+    font-size: 16px;
+
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+
+    cursor:pointer;
+    color: #ffffff;
+    padding:8px 20px;
+    text-decoration:none;
+    text-shadow:0 1px 0 #000000;
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+button:active {
+    position:relative;
+    top:1px;
+}
+
+#gui {
+    font-family: "gta-font", serif;
+    font-size: 16px;
+    z-index: 9999;
+    position: absolute;
+    color: #ffffff;
+    top: 14px;
+    left: 14px;
+}
+
+#gui_bottom {
+    z-index: 9999;
+    position: absolute;
+    bottom: 0;
+}
+
+img {
+    pointer-events: none;
+}
+
+/*Основной блок*/
+#main {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+}
+
+/*То, что перетаскиваем*/
+#main__map {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+}
+
+#gui {
+    position: absolute;
+    z-index: 20;
+}
